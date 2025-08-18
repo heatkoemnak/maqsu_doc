@@ -89,37 +89,24 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "docs",
-        label: "Documentation",
-        path: "docs", // ✅ Docusaurus content lives here
-       fields: [
-          {
-            type: "string",
-            name: "title_en",
-            label: "Title (English)",
-            isTitle: true,
-            required: true,
-          },
-          {
-            type: "string",
-            name: "title_km",
-            label: "Title (Khmer)",
-          },
-          {
-            type: "rich-text",
-            name: "body_en",
-            label: "Body (English)",
-            isBody: true,
-          },
-          {
-            type: "rich-text",
-            name: "body_km",
-            label: "Body (Khmer)",
-          },
+        label: "Docs (EN)",
+        name: "docs_en",
+        path: "docs",
+        format: "md",
+        fields: [
+          { type: "string", name: "title", label: "Title" },
+          { type: "rich-text", name: "body", isBody: true, label: "Content" },
         ],
-        ui: {
-          router: ({ document }) => `/blog/${document._sys.filename}`,
-        },
+      },
+      {
+        label: "Docs (KM)",
+        name: "docs_km",
+        path: "i18n/km/docusaurus-plugin-content-docs/current",
+        format: "md",
+        fields: [
+          { type: "string", name: "title", label: "ចំណងជើង" },
+          { type: "rich-text", name: "body", isBody: true, label: "មាតិកា" },
+        ],
       },
     ],
   },
