@@ -89,29 +89,32 @@ export default defineConfig({
   schema: {
     collections: [
        {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
+        label: "Page",
+        name: "page",
+        path: "content/pages",
         fields: [
           {
             type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
+            name: "title_en",
+            label: "Title (English)",
+          },
+          {
+            type: "string",
+            name: "title_kh",
+            label: "Title (Khmer)",
           },
           {
             type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
+            name: "content_en",
+            label: "Content (English)",
+          },
+          {
+            type: "rich-text",
+            name: "content_kh",
+            label: "Content (Khmer)",
           },
         ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
-        },
-      },
+      }
     ],
   },
 });
