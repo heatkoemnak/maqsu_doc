@@ -88,25 +88,29 @@ export default defineConfig({
 
   schema: {
     collections: [
-      {
-        label: "Docs (EN)",
-        name: "docs_en",
-        path: "docs",
-        format: "md",
+       {
+        name: "post",
+        label: "Posts",
+        path: "content/posts",
         fields: [
-          { type: "string", name: "title", label: "Title" },
-          { type: "rich-text", name: "body", isBody: true, label: "Content" },
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true,
+          },
         ],
-      },
-      {
-        label: "Docs (KM)",
-        name: "docs_km",
-        path: "i18n/km/docusaurus-plugin-content-docs/current",
-        format: "md",
-        fields: [
-          { type: "string", name: "title", label: "ចំណងជើង" },
-          { type: "rich-text", name: "body", isBody: true, label: "មាតិកា" },
-        ],
+        ui: {
+          // This is an DEMO router. You can remove this to fit your site
+          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
+        },
       },
     ],
   },
