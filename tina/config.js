@@ -71,8 +71,8 @@ export default defineConfig({
   // clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || "",
   // token: process.env.TINA_TOKEN || "",
  branch,
-  clientId: "ef185d9c-a1bf-47c3-9c1a-0bdfedc58f60" || null,
-  token: "a3d4df4e4a6d4db5655e3fb516db010fa3027dd1" || null,
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID || null,
+  token: process.env.TINA_TOKEN || null,
   local: true,
   build: {
     outputFolder: "admin",
@@ -88,33 +88,33 @@ export default defineConfig({
 
   schema: {
     collections: [
-      //  {
-      //   label: "Page",
-      //   name: "page",
-      //   path: "content/pages",
-      //   fields: [
-      //     {
-      //       type: "string",
-      //       name: "title_en",
-      //       label: "Title (English)",
-      //     },
-      //     {
-      //       type: "string",
-      //       name: "title_kh",
-      //       label: "Title (Khmer)",
-      //     },
-      //     {
-      //       type: "rich-text",
-      //       name: "content_en",
-      //       label: "Content (English)",
-      //     },
-      //     {
-      //       type: "rich-text",
-      //       name: "content_kh",
-      //       label: "Content (Khmer)",
-      //     },
-      //   ],
-      // }
+       {
+        label: "Page",
+        name: "page",
+        path: "content/pages",
+        fields: [
+          {
+            type: "string",
+            name: "title_en",
+            label: "Title (English)",
+          },
+          {
+            type: "string",
+            name: "title_kh",
+            label: "Title (Khmer)",
+          },
+          {
+            type: "rich-text",
+            name: "content_en",
+            label: "Content (English)",
+          },
+          {
+            type: "rich-text",
+            name: "content_kh",
+            label: "Content (Khmer)",
+          },
+        ],
+      }
     ],
   },
 });
