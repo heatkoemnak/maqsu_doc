@@ -88,33 +88,33 @@ export default defineConfig({
 
   schema: {
     collections: [
-       {
-        label: "Page",
-        name: "page",
-        path: "content/pages",
-        fields: [
-          {
-            type: "string",
-            name: "title_en",
-            label: "Title (English)",
-          },
-          {
-            type: "string",
-            name: "title_kh",
-            label: "Title (Khmer)",
-          },
-          {
-            type: "rich-text",
-            name: "content_en",
-            label: "Content (English)",
-          },
-          {
-            type: "rich-text",
-            name: "content_kh",
-            label: "Content (Khmer)",
-          },
-        ],
-      }
+      //  {
+      //   label: "Page",
+      //   name: "page",
+      //   path: "content/pages",
+      //   fields: [
+      //     {
+      //       type: "string",
+      //       name: "title_en",
+      //       label: "Title (English)",
+      //     },
+      //     {
+      //       type: "string",
+      //       name: "title_kh",
+      //       label: "Title (Khmer)",
+      //     },
+      //     {
+      //       type: "rich-text",
+      //       name: "content_en",
+      //       label: "Content (English)",
+      //     },
+      //     {
+      //       type: "rich-text",
+      //       name: "content_kh",
+      //       label: "Content (Khmer)",
+      //     },
+      //   ],
+      // }
     ],
   },
 });
