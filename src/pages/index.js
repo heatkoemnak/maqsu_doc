@@ -46,7 +46,7 @@ export default function Home() {
       </main>
        <h1 style={{margin: 20}}>
         <Translate description="The homepage main heading">
-          Welcome to my Docusaurus translated site!
+          សូមស្វាគមន៍មកកាន់ គេហទំព័រ  MAQSU
         </Translate>
       </h1>
     </Layout>

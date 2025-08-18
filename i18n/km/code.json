@@ -329,5 +329,9 @@
   "Getting Started": {
     "message": "ចាប់ផ្តើម​ ឥឡូវនេះ!",
     "description": "The homepage main heading"
+  },
+  "សូមស្វាគមន៍មកកាន់ គេហទំព័រ MAQSU": {
+    "message": "សូមស្វាគមន៍មកកាន់ គេហទំព័រ MAQSU",
+    "description": "The homepage main heading"
   }
 }
