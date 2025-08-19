@@ -12,7 +12,8 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\""
+    "dev": "tinacms dev -c \"next dev\"",
+    "tina:reset": "rmdir /s /q .tina\\__generated__ && npx tinacms dev"
   },
   "dependencies": {
     "@docusaurus/core": "3.8.1",
