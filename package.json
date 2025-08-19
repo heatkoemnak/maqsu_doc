@@ -30,7 +30,7 @@
     "@docusaurus/module-type-aliases": "3.8.1",
     "@docusaurus/types": "3.8.1",
     "@tinacms/cli": "^1.10.2",
-    "tinacms": "^2.8.2"
+    "tinacms": "^2.8.1"
   },
   "browserslist": {
     "production": [
