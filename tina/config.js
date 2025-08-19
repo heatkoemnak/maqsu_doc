@@ -6,9 +6,9 @@ export default defineConfig({
   branch:"main",
 
   // Get this from tina.io
-  clientId:"9ecacd79-23a8-46cb-8198-3bbe6c466ff0",
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
   // Get this from tina.io
-  token:"0859726b0cc7f42a535a7fc58e3121782566cf7e",
+  token: process.env.TINA_TOKEN,
 
   build: {
     outputFolder: "admin",
@@ -24,9 +24,9 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
+        name: "page",
+        label: "Page",
+        path: "content/pages",
         fields: [
           {
             type: "string",
@@ -36,7 +36,7 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "rich-text",
+            type: "string",
             name: "body",
             label: "Body",
             isBody: true,
