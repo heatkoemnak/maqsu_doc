@@ -44,12 +44,6 @@ export default function Home() {
       <main>
         <HomepageFeatures />
       </main>
-       <h1 style={{margin: 20}}>
-        <p description="The homepage main heading">
-          Welcome to the MAQSU website
-          {/* សូមស្វាគមន៍មកកាន់ គេហទំព័រ  MAQSU */}
-        </p>
-      </h1>
     </Layout>
 
   );
