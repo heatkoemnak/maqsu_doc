@@ -13,6 +13,7 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "dev": "tinacms dev -c \"next dev\"",
+    "build:dev": "tinacms build -c \"next build\"",
     "tina:reset": "rmdir /s /q .tina\\__generated__ && npx tinacms dev"
   },
   "dependencies": {
